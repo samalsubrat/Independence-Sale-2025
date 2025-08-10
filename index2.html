@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom to Shop - Independence Day Sale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        @keyframes floatReverse {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(20px) rotate(-5deg); }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .animate-float-reverse {
+            animation: floatReverse 8s ease-in-out infinite;
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .animate-fade-in-scale {
+            animation: fadeInScale 0.6s ease-out forwards;
+        }
+        
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slide-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        .animate-spin-slow {
+            animation: spin 20s linear infinite;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
+        .delay-900 { animation-delay: 0.9s; }
+        .delay-1000 { animation-delay: 1s; }
+        
+        .tricolor-gradient {
+            background: linear-gradient(to right, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+        }
+        
+        .saffron-accent {
+            color: #FF9933;
+        }
+        
+        .green-accent {
+            color: #138808;
+        }
+        
+        .saffron-gradient {
+            background: linear-gradient(135deg, #FF9933, #FFB366);
+        }
+        
+        .green-gradient {
+            background: linear-gradient(135deg, #138808, #4CAF50);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .floating-element {
+            position: absolute;
+            pointer-events: none;
+        }
+        
+        .tricolor-flag {
+            width: 30px;
+            height: 20px;
+            background: linear-gradient(to bottom, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+            border-radius: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .particle {
+            width: 4px;
+            height: 4px;
+            background: #FF9933;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+    
+    <!-- Floating Elements -->
+    <div class="floating-element top-20 left-10 animate-float delay-100">
+        <div class="tricolor-flag"></div>
+    </div>
+    <div class="floating-element top-40 right-20 animate-float-reverse delay-300">
+        <div class="particle saffron-gradient"></div>
+    </div>
+    <div class="floating-element top-60 left-1/4 animate-float delay-500">
+        <div class="w-6 h-6 border-2 border-orange-300 rounded-full animate-pulse-slow"></div>
+    </div>
+    <div class="floating-element top-80 right-1/3 animate-float-reverse delay-700">
+        <div class="tricolor-flag"></div>
+    </div>
+    <div class="floating-element top-96 left-3/4 animate-float delay-1000">
+        <div class="particle green-gradient"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen hero-bg flex items-center justify-center px-6 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-20 w-32 h-32 border border-orange-300 rounded-full animate-spin-slow"></div>
+            <div class="absolute bottom-40 right-20 w-24 h-24 border border-green-300 rounded-full animate-spin-slow" style="animation-direction: reverse;"></div>
+        </div>
+        
+        <div class="text-center max-w-4xl mx-auto relative z-10">
+            <h1 class="text-5xl md:text-7xl font-light mb-6 opacity-0 animate-fade-in-up">
+                Freedom to <span class="saffron-accent font-medium">Shop</span>.
+            </h1>
+            <h1 class="text-5xl md:text-7xl font-light mb-8 opacity-0 animate-fade-in-up delay-300">
+                Freedom to <span class="green-accent font-medium">Save</span>.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 opacity-0 animate-fade-in-up delay-600 font-light">
+                Celebrate India's 78th Independence Day with blockbuster deals.
+            </p>
+            <button class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:shadow-xl transition-all duration-300 opacity-0 animate-fade-in-up delay-900 hover-lift">
+                Explore Deals
+            </button>
+        </div>
+        
+        <!-- Subtle tricolor accent -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-20 h-1 tricolor-gradient rounded-full opacity-60"></div>
+        
+        <!-- Floating particles -->
+        <div class="absolute top-1/4 left-10 w-2 h-2 bg-orange-400 rounded-full animate-float opacity-60"></div>
+        <div class="absolute top-1/3 right-20 w-3 h-3 bg-green-400 rounded-full animate-float-reverse opacity-60"></div>
+        <div class="absolute bottom-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-float opacity-60"></div>
+    </section>
+
+    <!-- Blockbuster Deal Section -->
+    <section class="py-20 px-6 bg-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-10 right-10 w-20 h-20 border-2 border-orange-200 rounded-full animate-pulse-slow opacity-30"></div>
+        <div class="absolute bottom-20 left-10 w-16 h-16 border-2 border-green-200 rounded-full animate-pulse-slow opacity-30" style="animation-delay: 1s;"></div>
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-light mb-4 opacity-0 animate-fade-in-up">
+                    Blockbuster Deal: The Freedom of <span class="saffron-accent">Performance</span>
+                </h2>
+                <div class="w-24 h-1 tricolor-gradient mx-auto rounded-full opacity-0 animate-fade-in-scale delay-200"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 opacity-0 animate-slide-in-left delay-400">
+                    <h3 class="text-3xl font-medium mb-6">iPhone 15 Pro Max</h3>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Experience the pinnacle of smartphone technology. Titanium design, A17 Pro chip, and Pro camera system that captures life in stunning detail.
+                    </p>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-2xl text-gray-400 line-through">₹1,59,900</span>
+                        <span class="text-4xl font-semibold saffron-accent">₹1,29,900</span>
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium animate-pulse">Save ₹30,000</span>
+                    </div>
+                    <button class="bg-gradient-to-r from-orange-500 to-green-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:shadow-xl transition-all duration-300 hover-lift">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="order-1 md:order-2 opacity-0 animate-slide-in-right delay-600">
+                    <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-8 hover-lift relative">
+                        <img src="/placeholder.svg?height=400&width=400&text=iPhone 15 Pro Max" alt="iPhone 15 Pro Max" class="w-full h-80 object-cover rounded-2xl">
+                        <div class="absolute top-4 right-4 tricolor-flag animate-float"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Never Before Deals Section 1 - For the Home -->
+    <section class="py-20 px-6 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
+        <!-- Floating elements -->
+        <div class="absolute top-20 left-20 tricolor-flag animate-float opacity-40"></div>
+        <div class="absolute bottom-20 right-20 w-4 h-4 bg-green-400 rounded-full animate-float-reverse opacity-60"></div>
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-light mb-4 opacity-0 animate-fade-in-up">
+                    Never Before Deals: <span class="green-accent">For the Home</span>
+                </h2>
+                <p class="text-xl text-gray-600 opacity-0 animate-fade-in-up delay-200">This is your time to shine.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-100">
+                    <img src="/placeholder.svg?height=250&width=300&text=Keychron K8 Pro" alt="Keychron K8 Pro" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Arion Frost x Keychron K8 Pro</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹15,000</span>
+                        <span class="text-2xl font-bold saffron-accent">₹7,999</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">Wireless mechanical keyboard with hot-swappable switches</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-300">
+                    <img src="/placeholder.svg?height=250&width=300&text=Royal Kludge RK R87 PRO" alt="Royal Kludge RK R87 PRO" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Royal Kludge RK R87 PRO</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹7,000</span>
+                        <span class="text-2xl font-bold green-accent">₹4,700</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">87-key TKL mechanical gaming keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-500">
+                    <img src="/placeholder.svg?height=250&width=300&text=Hello Ganss GS 87C-HT" alt="Hello Ganss GS 87C-HT" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Hello Ganss GS 87C-HT</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹9,999</span>
+                        <span class="text-2xl font-bold saffron-accent">₹5,999</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">Compact mechanical keyboard with premium switches</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Never Before Deals Section 2 - For the Explorer -->
+    <section class="py-20 px-6 bg-gradient-to-br from-green-50 to-green-100 relative overflow-hidden">
+        <!-- Floating elements -->
+        <div class="absolute top-40 right-40 w-6 h-6 border-2 border-orange-300 rounded-full animate-pulse-slow opacity-50"></div>
+        <div class="absolute bottom-40 left-40 tricolor-flag animate-float-reverse opacity-40"></div>
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-light mb-4 opacity-0 animate-fade-in-up">
+                    Never Before Deals: <span class="saffron-accent">For the Explorer</span>
+                </h2>
+                <p class="text-xl text-gray-600 opacity-0 animate-fade-in-up delay-200">Adventure awaits with these incredible offers.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-100">
+                    <img src="/placeholder.svg?height=200&width=250&text=Ducky One 3 TKL Pure White RGB" alt="Ducky One 3 TKL Pure White RGB" class="w-full h-40 object-cover rounded-2xl mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Ducky One 3 TKL Pure White RGB</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-400 line-through">₹12,999</span>
+                        <span class="text-xl font-bold green-accent">₹9,089</span>
+                    </div>
+                    <p class="text-gray-600 text-xs mb-4">Compact TKL with pure white design</p>
+                    <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-200">
+                    <img src="/placeholder.svg?height=200&width=250&text=Ducky One 3 TKL Daybreak" alt="Ducky One 3 TKL Daybreak" class="w-full h-40 object-cover rounded-2xl mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Ducky One 3 TKL Daybreak</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-400 line-through">₹13,999</span>
+                        <span class="text-xl font-bold saffron-accent">₹9,739</span>
+                    </div>
+                    <p class="text-gray-600 text-xs mb-4">Daybreak colorway with RGB lighting</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-300">
+                    <img src="/placeholder.svg?height=200&width=250&text=Aula F87 Pro Wireless" alt="Aula F87 Pro Wireless" class="w-full h-40 object-cover rounded-2xl mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Aula F87 Pro Wireless</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-400 line-through">₹6,400</span>
+                        <span class="text-xl font-bold green-accent">₹5,000</span>
+                    </div>
+                    <p class="text-gray-600 text-xs mb-4">Wireless gaming keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-400">
+                    <img src="/placeholder.svg?height=200&width=250&text=Aula F75 MAX" alt="Aula F75 MAX" class="w-full h-40 object-cover rounded-2xl mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Aula F75 MAX</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-400 line-through">₹12,500</span>
+                        <span class="text-xl font-bold saffron-accent">₹7,500</span>
+                    </div>
+                    <p class="text-gray-600 text-xs mb-4">75% gasket mount keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Never Before Deals Section 3 - For the Creator -->
+    <section class="py-20 px-6 bg-gradient-to-br from-blue-50 to-blue-100 relative overflow-hidden">
+        <!-- Floating elements -->
+        <div class="absolute top-20 left-20 w-8 h-8 border border-green-300 rounded-full animate-float opacity-40"></div>
+        <div class="absolute bottom-20 right-20 particle animate-float-reverse"></div>
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-light mb-4 opacity-0 animate-fade-in-up">
+                    Never Before Deals: <span class="green-accent">For the Creator</span>
+                </h2>
+                <p class="text-xl text-gray-600 opacity-0 animate-fade-in-up delay-200">Unleash your creative potential.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-100">
+                    <img src="/placeholder.svg?height=250&width=300&text=Royal Kludge RK H81" alt="Royal Kludge RK H81" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Royal Kludge RK H81</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹10,000</span>
+                        <span class="text-2xl font-bold saffron-accent">₹6,419</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">75% gasket mount wireless keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-300">
+                    <img src="/placeholder.svg?height=250&width=300&text=ATK VXE V75X" alt="ATK VXE V75X" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">ATK VXE V75X</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹8,100</span>
+                        <span class="text-2xl font-bold green-accent">₹7,600</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">75% layout gaming keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-500">
+                    <img src="/placeholder.svg?height=250&width=300&text=Keychron V1 MAX" alt="Keychron V1 MAX" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Keychron V1 MAX</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹15,000</span>
+                        <span class="text-2xl font-bold saffron-accent">₹8,999</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">Wireless gasket mount full-size keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Never Before Deals Section 4 - For the Fitness Enthusiast -->
+    <section class="py-20 px-6 bg-gradient-to-br from-purple-50 to-purple-100 relative overflow-hidden">
+        <!-- Floating elements -->
+        <div class="absolute top-40 right-20 tricolor-flag animate-float opacity-40"></div>
+        <div class="absolute bottom-40 left-20 w-5 h-5 bg-orange-400 rounded-full animate-float-reverse opacity-60"></div>
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-light mb-4 opacity-0 animate-fade-in-up">
+                    Never Before Deals: <span class="saffron-accent">For the Fitness Enthusiast</span>
+                </h2>
+                <p class="text-xl text-gray-600 opacity-0 animate-fade-in-up delay-200">Achieve your fitness goals with these deals.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-100">
+                    <img src="/placeholder.svg?height=250&width=300&text=Royal Kludge RK M75 TARO MILK" alt="Royal Kludge RK M75 TARO MILK" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Royal Kludge RK M75 TARO MILK</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹11,000</span>
+                        <span class="text-2xl font-bold green-accent">₹6,999</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">75% wireless keyboard in Taro Milk colorway</p>
+                    <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-300">
+                    <img src="/placeholder.svg?height=250&width=300&text=Royal Kludge RK R65" alt="Royal Kludge RK R65" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Royal Kludge RK R65</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹6,500</span>
+                        <span class="text-2xl font-bold saffron-accent">₹4,399</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">Compact 65% wireless mechanical keyboard</p>
+                    <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover-lift opacity-0 animate-fade-in-scale delay-500">
+                    <img src="/placeholder.svg?height=250&width=300&text=SK61 – PBT & RGB" alt="SK61 – PBT & RGB" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-semibold mb-2">SK61 – PBT & RGB (Gateron Optical Switches)</h3>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-lg text-gray-400 line-through">₹5,999</span>
+                        <span class="text-2xl font-bold green-accent">₹5,299</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">60% RGB keyboard with Gateron optical switches</p>
+                    <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-full font-medium hover:shadow-lg transition-all">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-20 left-20 tricolor-flag animate-float opacity-30"></div>
+        <div class="absolute bottom-20 right-20 tricolor-flag animate-float-reverse opacity-30"></div>
+        <div class="absolute top-40 right-40 w-8 h-8 border-2 border-orange-300 rounded-full animate-pulse-slow opacity-40"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="mb-8 opacity-0 animate-fade-in-scale">
+                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 via-white to-green-500 rounded-full flex items-center justify-center shadow-lg animate-float">
+                    <span class="text-2xl">🇮🇳</span>
+                </div>
+            </div>
+            
+            <h2 class="text-4xl md:text-5xl font-light mb-8 opacity-0 animate-fade-in-up delay-200">
+                Remembering Our <span class="saffron-accent">Heroes</span>
+            </h2>
+            
+            <p class="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed font-light opacity-0 animate-fade-in-up delay-400">
+                Wishing you a Happy Independence Day. Let's remember the sacrifices of our freedom fighters who gave us the freedom to dream and build.
+            </p>
+            
+            <div class="flex justify-center items-center mb-8 opacity-0 animate-fade-in-scale delay-600">
+                <div class="flex rounded-full overflow-hidden shadow-lg">
+                    <div class="w-8 h-8 bg-orange-500"></div>
+                    <div class="w-8 h-8 bg-white"></div>
+                    <div class="w-8 h-8 bg-green-600"></div>
+                </div>
+            </div>
+            
+            <p class="text-2xl font-medium opacity-0 animate-fade-in-up delay-800">
+                <span class="saffron-accent">Jai</span> <span class="green-accent">Hind</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-white border-t border-gray-200">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-600">© 2024 Freedom Sale. Celebrating India's Independence with incredible deals.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

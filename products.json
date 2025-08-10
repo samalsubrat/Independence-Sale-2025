@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Arion Frost x Keychron K8 Pro",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
+    "price": 7999,
+    "originalPrice": 15000,
+    "description": "Get Deskmat L (Free)"
+  },
+  {
+    "name": "Royal Kludge RK R87 PRO",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+    "price": 4700,
+    "originalPrice": 7000,
+    "description": "87-key TKL mechanical gaming keyboard"
+  },
+  {
+    "name": "Hello Ganss GS 87C-HT",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+    "price": 3999,
+    "originalPrice": 6499,
+    "description": "Compact mechanical keyboard with premium switches"
+  },
+  {
+    "name": "Ducky One 3 TKL Pure White RGB",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky.jpg",
+    "price": 9089,
+    "originalPrice": 12999,
+    "description": "Compact TKL with pure white design"
+  },
+  {
+    "name": "Royal Kludge RK H81",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rkh81.jpg",
+    "price": 6419,
+    "originalPrice": 10000,
+    "description": "75% gasket mount wireless keyboard"
+  },
+  {
+    "name": "Keychron V1 MAX",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/keychron.jpg",
+    "price": 8999,
+    "originalPrice": 15000,
+    "description": "Wireless gasket mount full-size keyboard"
+  },
+  {
+    "name": "ATK VXE V75X",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/atk.jpg",
+    "price": 7600,
+    "originalPrice": 8100,
+    "description": "75% layout gaming keyboard"
+  },
+  {
+    "name": "Royal Kludge RK M75 TARO MILK",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/taro.jpg",
+    "price": 6999,
+    "originalPrice": 11000,
+    "description": "75% wireless keyboard in Taro Milk colorway"
+  },
+  {
+    "name": "Ducky One 3 TKL Daybreak",
+    "image": "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/daybreak.jpg",
+    "price": 9739,
+    "originalPrice": 13999,
+    "description": "Daybreak colorway with RGB lighting"
+  }
+]
