@@ -274,7 +274,7 @@
       }
     </style>
   </head>
-  <body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+  <body class="bg-[#e2e8f1] text-gray-800 overflow-x-hidden">
     <!-- Floating Elements -->
     <div>
       <div class="floating-element top-20 left-10 animate-float delay-100">
@@ -298,22 +298,36 @@
       <div class="floating-element top-96 left-3/4 animate-float delay-1000">
         <div class="particle green-gradient"></div>
       </div>
-      
+
       <!-- Additional subtle floating elements -->
-      <div class="floating-element top-32 left-1/3 animate-float-gentle delay-200">
+      <div
+        class="floating-element top-32 left-1/3 animate-float-gentle delay-200"
+      >
         <div class="w-3 h-3 bg-blue-300 rounded-full opacity-40"></div>
       </div>
-      <div class="floating-element top-72 right-1/4 animate-float-sway delay-600">
-        <div class="w-4 h-4 border border-green-200 rounded-full animate-gentle-pulse"></div>
+      <div
+        class="floating-element top-72 right-1/4 animate-float-sway delay-600"
+      >
+        <div
+          class="w-4 h-4 border border-green-200 rounded-full animate-gentle-pulse"
+        ></div>
       </div>
-      <div class="floating-element bottom-32 left-1/5 animate-float-reverse delay-400">
+      <div
+        class="floating-element bottom-32 left-1/5 animate-float-reverse delay-400"
+      >
         <div class="w-2 h-2 bg-orange-300 rounded-full opacity-50"></div>
       </div>
-      <div class="floating-element bottom-48 right-1/5 animate-float-gentle delay-800">
+      <div
+        class="floating-element bottom-48 right-1/5 animate-float-gentle delay-800"
+      >
         <div class="particle"></div>
       </div>
-      <div class="floating-element top-1/3 right-12 animate-float-sway delay-900">
-        <div class="w-5 h-5 border-2 border-blue-200 rounded-full opacity-30"></div>
+      <div
+        class="floating-element top-1/3 right-12 animate-float-sway delay-900"
+      >
+        <div
+          class="w-5 h-5 border-2 border-blue-200 rounded-full opacity-30"
+        ></div>
       </div>
     </div>
 
@@ -344,9 +358,14 @@
           Freedom to <span class="green-accent font-medium">Save</span>.
         </h1>
         <p
-          class="text-xl md:text-2xl text-gray-600 mb-12 opacity-0 animate-fade-in-up delay-600 font-light"
+          class="text-xl md:text-2xl text-gray-600 mb-2 opacity-0 animate-fade-in-up delay-600 font-light"
         >
           Celebrate India's 78th Independence Day with blockbuster deals.
+        </p>
+        <p
+          class="text-xl md:text-2xl font-medium text-black mb-8 opacity-0 animate-fade-in-up delay-600 font-light"
+        >
+          15th August to 20th August
         </p>
         <button
           class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:shadow-xl transition-all duration-300 opacity-0 animate-fade-in-up delay-900 hover-lift"
@@ -370,7 +389,7 @@
       <div
         class="absolute bottom-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-float opacity-60"
       ></div>
-      
+
       <!-- Additional subtle floating particles in hero -->
       <div
         class="absolute top-1/5 right-1/3 w-1 h-1 bg-orange-300 rounded-full animate-float-gentle opacity-40 delay-300"
@@ -390,163 +409,372 @@
     </section>
 
     <!-- Keyboards Section -->
-    <section class="bg-[#e2e8f1] px-2.5 md:px-24 xl:px-72 md:py-10 relative overflow-hidden">
+    <section
+      class="px-2.5 md:px-24 2xl:px-64 md:py-10 relative overflow-hidden"
+    >
       <!-- Floating elements for keyboards section -->
       <div class="absolute top-10 left-10 animate-float delay-200 opacity-30">
         <div class="tricolor-flag"></div>
       </div>
-      <div class="absolute top-20 right-16 animate-float-reverse delay-400 opacity-40">
+      <div
+        class="absolute top-20 right-16 animate-float-reverse delay-400 opacity-40"
+      >
         <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
       </div>
-      <div class="absolute bottom-20 left-20 animate-float delay-600 opacity-25">
-        <div class="w-4 h-4 border-2 border-green-300 rounded-full animate-pulse-slow"></div>
+      <div
+        class="absolute bottom-20 left-20 animate-float delay-600 opacity-25"
+      >
+        <div
+          class="w-4 h-4 border-2 border-green-300 rounded-full animate-pulse-slow"
+        ></div>
       </div>
-      <div class="absolute bottom-16 right-24 animate-float-reverse delay-800 opacity-35">
+      <div
+        class="absolute bottom-16 right-24 animate-float-reverse delay-800 opacity-35"
+      >
         <div class="particle saffron-gradient"></div>
       </div>
-      
+
       <div class="text-center mb-10 relative z-10">
         <h2 class="text-3xl md:text-4xl font-light mb-4">
           <span class="saffron-accent">Mechanical</span> Keyboards
         </h2>
         <p class="text-gray-600">Premium keyboards for every setup</p>
       </div>
-      <div id="keyboards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+      <div
+        id="keyboards-container"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 relative z-10"
+      >
         <!-- Keyboards will be dynamically inserted here -->
       </div>
     </section>
 
     <!-- Mice Section -->
-    <section class="bg-[#e2e8f1] px-2.5 md:px-24 xl:px-72 md:py-10 relative overflow-hidden">
+    <section class="px-2.5 md:px-24 xl:px-64 md:py-10 relative overflow-hidden">
       <!-- Floating elements for mice section -->
       <div class="absolute top-16 right-12 animate-float delay-300 opacity-30">
-        <div class="w-5 h-5 border border-green-400 rounded-full animate-spin-slow"></div>
+        <div
+          class="w-5 h-5 border border-green-400 rounded-full animate-spin-slow"
+        ></div>
       </div>
-      <div class="absolute top-32 left-16 animate-float-reverse delay-500 opacity-35">
+      <div
+        class="absolute top-32 left-16 animate-float-reverse delay-500 opacity-35"
+      >
         <div class="tricolor-flag"></div>
       </div>
-      <div class="absolute bottom-24 right-20 animate-float delay-700 opacity-25">
+      <div
+        class="absolute bottom-24 right-20 animate-float delay-700 opacity-25"
+      >
         <div class="w-3 h-3 bg-green-500 rounded-full"></div>
       </div>
-      <div class="absolute bottom-32 left-24 animate-float-reverse delay-900 opacity-40">
+      <div
+        class="absolute bottom-32 left-24 animate-float-reverse delay-900 opacity-40"
+      >
         <div class="particle green-gradient"></div>
       </div>
       <div class="absolute top-1/2 right-8 animate-float delay-1000 opacity-20">
         <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
       </div>
-      
+
       <div class="text-center mb-10 relative z-10">
         <h2 class="text-3xl md:text-4xl font-light mb-4">
           <span class="green-accent">Gaming</span> Mice
         </h2>
         <p class="text-gray-600">Precision gaming mice for pros</p>
       </div>
-      <div id="mice-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+      <div
+        id="mice-container"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 relative z-10"
+      >
         <!-- Mice will be dynamically inserted here -->
       </div>
     </section>
 
     <!-- Accessories Section -->
-    <section class="bg-[#e2e8f1] px-2.5 md:px-24 xl:px-72 md:py-10 relative overflow-hidden">
-      <div class="absolute top-12 left-14 animate-float-reverse delay-200 opacity-30">
-        <div class="w-4 h-4 border-2 border-orange-300 rounded-full animate-pulse-slow"></div>
+    <section class="px-2.5 md:px-24 xl:px-64 md:py-10 relative overflow-hidden">
+      <div
+        class="absolute top-12 left-14 animate-float-reverse delay-200 opacity-30"
+      >
+        <div
+          class="w-4 h-4 border-2 border-orange-300 rounded-full animate-pulse-slow"
+        ></div>
       </div>
       <div class="absolute top-24 right-20 animate-float delay-400 opacity-35">
         <div class="particle saffron-gradient"></div>
       </div>
-      <div class="absolute bottom-20 left-16 animate-float-reverse delay-600 opacity-25">
+      <div
+        class="absolute bottom-20 left-16 animate-float-reverse delay-600 opacity-25"
+      >
         <div class="tricolor-flag"></div>
       </div>
-      <div class="absolute bottom-28 right-16 animate-float delay-800 opacity-40">
+      <div
+        class="absolute bottom-28 right-16 animate-float delay-800 opacity-40"
+      >
         <div class="w-3 h-3 bg-green-400 rounded-full"></div>
       </div>
-      <div class="absolute top-1/3 left-8 animate-float-reverse delay-1000 opacity-20">
-        <div class="w-6 h-6 border border-orange-200 rounded-full animate-spin-slow"></div>
+      <div
+        class="absolute top-1/3 left-8 animate-float-reverse delay-1000 opacity-20"
+      >
+        <div
+          class="w-6 h-6 border border-orange-200 rounded-full animate-spin-slow"
+        ></div>
       </div>
       <div class="absolute top-2/3 right-12 animate-float delay-300 opacity-30">
         <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
       </div>
-      
+
       <div class="text-center mb-10 relative z-10">
         <h2 class="text-3xl md:text-4xl font-light mb-4">
           <span class="saffron-accent">Gaming</span> Accessories
         </h2>
         <p class="text-gray-600">Complete your gaming setup</p>
       </div>
-      <div id="accessories-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+      <div
+        id="accessories-container"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 relative z-10"
+      ></div>
+    </section>
+
+    <!-- Mouse Section -->
+    <section
+      class="px-2.5 md:px-24 2xl:px-64 md:py-10 relative overflow-hidden"
+    >
+      <!-- Floating elements for mouse section -->
+      <div class="absolute top-10 left-10 animate-float delay-200 opacity-30">
+        <div class="tricolor-flag"></div>
+      </div>
+      <div
+        class="absolute top-20 right-16 animate-float-reverse delay-400 opacity-40"
+      >
+        <div class="w-3 h-3 bg-orange-400 rounded-full"></div>
+      </div>
+      <div
+        class="absolute bottom-20 left-20 animate-float delay-600 opacity-25"
+      >
+        <div
+          class="w-4 h-4 border-2 border-green-300 rounded-full animate-pulse-slow"
+        ></div>
+      </div>
+      <div
+        class="absolute bottom-16 right-24 animate-float-reverse delay-800 opacity-35"
+      >
+        <div class="particle saffron-gradient"></div>
+      </div>
+
+      <div class="text-center mb-10 relative z-10">
+        <h2 class="text-3xl md:text-4xl font-light mb-4">
+          <span class="saffron-accent">Mouse</span> Keyboards
+        </h2>
+        <p class="text-gray-600">Premium keyboards for every setup</p>
+      </div>
+      <div
+        id="miceData-mice-container"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-5 relative z-10"
+      >
+        <!-- Keyboards will be dynamically inserted here -->
       </div>
     </section>
 
     <script>
-      const keyboardsData = [
+      const aulaData = [
         {
-          name: "Arion Frost x Keychron K8 Pro",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
-          price: 7999,
-          originalPrice: 15000,
-          description: "Get Deskmat L (Free)"
+          name: "Aula F75 MAX",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
+          price: 7500,
+          originalPrice: 12500,
+          description: "Get Metal Switch Tester Free",
+        },
+        {
+          name: "Aula M75 Aluminum",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          price: 8999,
+          originalPrice: 9999,
+          description: "Get Ducky Feather Mouse Free",
+        },
+        {
+          name: "Aula F75 Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+          price: 5500,
+          originalPrice: 6300,
+          description: "Get Metal Switch Tester Free",
+        },
+        {
+          name: "Aula F99 Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          price: 6500,
+          originalPrice: 7500,
+          description: "Get Metal Switch Tester Free",
+        },
+        {
+          name: "Aula Thermally Sublimated PBT Keycaps",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          price: 1500,
+          originalPrice: 2500,
+          description: "Newly Added",
+        },
+      ];
+
+      const rkData = [
+        {
+          name: "Royal Kludge RK R98 Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-r98.jpg",
+          price: 8099,
+          originalPrice: 12500,
+          description: "O-Ring Translucent Free",
         },
         {
           name: "Royal Kludge RK R87 PRO",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
           price: 4700,
           originalPrice: 7000,
-          description: "87-key TKL mechanical gaming keyboard"
+          description: "O-Ring Translucent Free",
         },
         {
-          name: "Hello Ganss GS 87C-HT",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          name: "Royal Kludge RK M87",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+          price: 7899,
+          originalPrice: 12000,
+          description: "O-Ring Translucent Free",
+        },
+        {
+          name: "Royal Kludge RK M75 TARO MILK",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m75-taro.jpg",
+          price: 6500,
+          originalPrice: 11000,
+          description: "Mecmat - Orange leaves Free",
+        },
+        {
+          name: "Royal Kludge RK R65",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-r65.jpg",
           price: 3999,
-          originalPrice: 6499,
-          description: "Compact mechanical keyboard with premium switches"
+          originalPrice: 6500,
+          description: "65% compact mechanical keyboard",
         },
       ];
 
+      const duckyData = [
+        {
+          name: "Ducky One 3 TKL Pure White RGB",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-white.jpg",
+          price: 9089,
+          originalPrice: 12999,
+          description: "MRP 50% - Premium TKL mechanical keyboard",
+        },
+        {
+          name: "Ducky One 3 TKL Daybreak",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-daybreak.jpg",
+          price: 9739,
+          originalPrice: 13999,
+          description: "MRP 50% - Daybreak colorway TKL keyboard",
+        },
+        {
+          name: "Ducky One 2 RGB TKL",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-rgb.jpg",
+          price: 9089,
+          originalPrice: 12999,
+          description: "MRP 50% - RGB mechanical keyboard",
+        },
+        {
+          name: "Ducky One 3 SF CLASSIC BLACK RGB",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 8189,
+          originalPrice: 8539,
+          description: "MRP 50% - Compact 65% layout keyboard",
+        },
+      ];
       const miceData = [
         {
-          name: "Lamzu Atlantis OG v2 Pro",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/lamzu1.jpg",
-          price: 10999,
-          originalPrice: 15000,
-          description: "Lightweight wireless gaming mouse - 59g"
+          name: "ROYAL KLUDGE M30",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-white.jpg",
+          price: 2599,
+          originalPrice: 5000,
+          description: "MRP 50% - Premium TKL mechanical keyboard",
         },
         {
-          name: "Lamzu Thorn 4K Compatible",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/lamzu2.jpg",
-          price: 5900,
-          originalPrice: 8000,
-          description: "High-performance gaming mouse with 4K compatibility"
+          name: "ROYAL KLUDGE M3",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-daybreak.jpg",
+          price: 5379,
+          originalPrice: 10000,
+          description: "MRP 50% - Daybreak colorway TKL keyboard",
         },
         {
-          name: "VXE MAD R",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/vxe1.jpg",
-          price: 5100,
-          originalPrice: 8600,
-          description: "Ergonomic wireless gaming mouse"
+          name: "VXE Mad R Series",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-rgb.jpg",
+          price: 6400,
+          originalPrice: 11000,
+          description: "MRP 50% - RGB mechanical keyboard",
         },
-      ];
-
-      const accessoriesData = [
         {
-          name: "MCHOSE A5 PRO",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/mchose1.jpg",
+          name: "Mchose A5 Series",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
           price: 4300,
-          originalPrice: 5900,
-          description: "Professional gaming headset"
+          originalPrice: 6400,
+          description: "MRP 50% - Compact 65% layout keyboard",
         },
         {
-          name: "MCHOSE A5 PRO MAX",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/mchose2.jpg",
-          price: 4600,
-          originalPrice: 6400,
-          description: "Premium gaming headset with noise cancellation"
+          name: "Mchose M7 Series",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 5500,
+          originalPrice: 7400,
+          description: "MRP 50% - Compact 65% layout keyboard",
         },
         {
           name: "Pulsar TenZ Signature Edition",
-          image: "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/pulsar1.jpg",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
           price: 13999,
           originalPrice: 20000,
-          description: "Professional esports mouse pad - TenZ Edition"
+          description: "MRP 50% - Compact 65% layout keyboard",
+        },
+        {
+          name: "Pulsar Xlite V3 eS",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 12999,
+          originalPrice: 20000,
+          description: "MRP 50% - Compact 65% layout keyboard",
+        },
+        {
+          name: "Glorious Model O Pro Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 5499,
+          originalPrice: 10999,
+          description: "MRP 50% - Compact 65% layout keyboard",
+        },
+        {
+          name: "Glorious Model O2 Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 7500,
+          originalPrice: 15000,
+          description: "MRP 50% - Compact 65% layout keyboard",
+        },
+        {
+          name: "Lamzu Mice",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 8799,
+          originalPrice: 16000,
+          description: "MRP 50% - Compact 65% layout keyboard",
         },
       ];
 
@@ -557,9 +785,18 @@
         }
 
         init() {
-          this.setupContainer('keyboards-container', keyboardsData, 'keyboards');
-          this.setupContainer('mice-container', miceData, 'mice');
-          this.setupContainer('accessories-container', accessoriesData, 'accessories');
+          this.setupContainer(
+            "keyboards-container",
+            aulaData,
+            "keyboards"
+          );
+          this.setupContainer("mice-container", rkData, "mice");
+          this.setupContainer(
+            "accessories-container",
+            duckyData,
+            "accessories"
+          );
+          this.setupContainer("miceData-mice-container", miceData, "mouse");
         }
 
         setupContainer(containerId, data, category) {
@@ -568,7 +805,7 @@
             console.error(`Container ${containerId} not found`);
             return;
           }
-          
+
           this.containers.set(category, container);
           this.productData.set(category, data);
           this.renderProducts(category);
@@ -576,41 +813,47 @@
 
         createProductCard(product, index, category) {
           return `
-            <div class="p-5 rounded-xl border border-white/30 bg-white/5 backdrop-blur-xl shadow-md hover-lift transition-all duration-300 opacity-0 animate-fade-in-scale" style="animation-delay: ${index * 0.1}s">
+            <div class="p-3 rounded-xl border border-white/30 bg-white/5 backdrop-blur-xl shadow-md hover-lift transition-all duration-300 opacity-0 animate-fade-in-scale flex flex-col items-start justify-between" style="animation-delay: ${
+              index * 0.1
+            }s">
               <img
                 src="${product.image}"
                 alt="${product.name}"
-                class="rounded-md mb-4 h-72 w-full object-cover"
+                class="rounded-md mb-4 h-64 w-full object-cover"
                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5Ij5JbWFnZSBOb3QgRm91bmQ8L3RleHQ+PC9zdmc+'"
               />
-              <h1 class="font-semibold text-lg mb-2">${product.name}</h1>
-              <div class="flex items-end gap-2 mb-2">
-                <h1 class="font-bold text-2xl text-orange-500">₹${this.formatPrice(product.price)}</h1>
-                <h2 class="text-md text-gray-500 line-through">₹${this.formatPrice(product.originalPrice)}</h2>
-              </div>
-              <h3 class="text-sm text-gray-500 mb-4">${product.description}</h3>
-              <button 
-                class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 px-4 rounded-full font-medium hover:shadow-lg transition-all duration-300"
-              >
-                Buy Now
-              </button>
+              <h1 class="font-semibold text-lg mb-2 text-start">${
+                product.name
+              }</h1>
+              <div class="flex items-end gap-4 mb-2">
+                <h1 class="font-bold text-2xl text-orange-500">₹${this.formatPrice(
+                  product.price
+                )}</h1>
+                <h2 class="text-md text-gray-500 line-through">₹${this.formatPrice(
+                  product.originalPrice
+                )}</h2>
+                </div>
+                <h3 class="text-sm text-gray-500">${product.description}</h3>
+              
             </div>
           `;
         }
 
         formatPrice(price) {
-          return price.toLocaleString('en-IN');
+          return price.toLocaleString("en-IN");
         }
 
         renderProducts(category) {
           const container = this.containers.get(category);
           const products = this.productData.get(category);
-          
+
           if (!container || !products) return;
 
           container.innerHTML = products
-            .map((product, index) => this.createProductCard(product, index, category))
-            .join('');
+            .map((product, index) =>
+              this.createProductCard(product, index, category)
+            )
+            .join("");
         }
 
         addProduct(category, product) {
@@ -652,9 +895,9 @@
           if (!originalProducts) return;
 
           const filtered = originalProducts.filter(
-            product => product.price >= minPrice && product.price <= maxPrice
+            (product) => product.price >= minPrice && product.price <= maxPrice
           );
-          
+
           this.productData.set(category, filtered);
           this.renderProducts(category);
 
@@ -668,13 +911,13 @@
           const originalProducts = this.productData.get(category);
           if (!originalProducts) return;
 
-          const filtered = originalProducts.filter(
-            product => product.name.toLowerCase().includes(query.toLowerCase())
+          const filtered = originalProducts.filter((product) =>
+            product.name.toLowerCase().includes(query.toLowerCase())
           );
-          
+
           this.productData.set(category, filtered);
           this.renderProducts(category);
-          
+
           return () => {
             this.productData.set(category, originalProducts);
             this.renderProducts(category);
@@ -698,27 +941,38 @@
 
       const multiProductsManager = new MultiProductsManager();
 
-      document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener("DOMContentLoaded", () => {
         multiProductsManager.init();
       });
 
-      window.updateKeyboards = function(newKeyboardsData) {
-        multiProductsManager.updateCategoryProducts('keyboards', newKeyboardsData);
+      window.updateKeyboards = function (newaulaData) {
+        multiProductsManager.updateCategoryProducts(
+          "keyboards",
+          newaulaData
+        );
       };
 
-      window.updateMice = function(newMiceData) {
-        multiProductsManager.updateCategoryProducts('mice', newMiceData);
+      window.updateMice = function (newrkData) {
+        multiProductsManager.updateCategoryProducts("mice", newrkData);
       };
 
-      window.updateAccessories = function(newAccessoriesData) {
-        multiProductsManager.updateCategoryProducts('accessories', newAccessoriesData);
+      window.updateAccessories = function (newduckyData) {
+        multiProductsManager.updateCategoryProducts(
+          "accessories",
+          newduckyData
+        );
       };
 
-      window.updateAllCategories = function(categoriesData) {
+      window.updateGamingMice = function (newGamingrkData) {
+        multiProductsManager.updateCategoryProducts(
+          "gaming-mice",
+          newGamingrkData
+        );
+      };
+
+      window.updateAllCategories = function (categoriesData) {
         multiProductsManager.updateMultipleCategories(categoriesData);
       };
-
-
     </script>
   </body>
 </html>
