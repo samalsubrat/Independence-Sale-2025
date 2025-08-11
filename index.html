@@ -408,7 +408,7 @@
       ></div>
     </section>
 
-    <!-- Keyboards Section -->
+    <!-- Aula Section -->
     <section
       class="px-2.5 md:px-24 2xl:px-64 md:py-10 relative overflow-hidden"
     >
@@ -448,8 +448,8 @@
       </div>
     </section>
 
-    <!-- Mice Section -->
-    <section class="px-2.5 md:px-24 xl:px-64 md:py-10 relative overflow-hidden">
+    <!-- Royal Kludge Section -->
+    <section class="px-2.5 md:px-24 2xl:px-64 md:py-10 relative overflow-hidden">
       <!-- Floating elements for mice section -->
       <div class="absolute top-16 right-12 animate-float delay-300 opacity-30">
         <div
@@ -489,8 +489,8 @@
       </div>
     </section>
 
-    <!-- Accessories Section -->
-    <section class="px-2.5 md:px-24 xl:px-64 md:py-10 relative overflow-hidden">
+    <!-- Ducky Section -->
+    <section class="px-2.5 md:px-24 2xl:px-64 md:py-10 relative overflow-hidden">
       <div
         class="absolute top-12 left-14 animate-float-reverse delay-200 opacity-30"
       >
@@ -813,7 +813,7 @@
 
         createProductCard(product, index, category) {
           return `
-            <div class="p-3 rounded-xl border border-white/30 bg-white/5 backdrop-blur-xl shadow-md hover-lift transition-all duration-300 opacity-0 animate-fade-in-scale flex flex-col items-start justify-between" style="animation-delay: ${
+            <div class="p-3 rounded-xl border border-white/30 bg-white/5 backdrop-blur-xl shadow-md hover-lift transition-all duration-300 opacity-0 animate-fade-in-scale flex flex-col h-full" style="animation-delay: ${
               index * 0.1
             }s">
               <img
@@ -822,19 +822,20 @@
                 class="rounded-md mb-4 h-64 w-full object-cover"
                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5Ij5JbWFnZSBOb3QgRm91bmQ8L3RleHQ+PC9zdmc+'"
               />
-              <h1 class="font-semibold text-lg mb-2 text-start">${
-                product.name
-              }</h1>
-              <div class="flex items-end gap-4 mb-2">
-                <h1 class="font-bold text-2xl text-orange-500">₹${this.formatPrice(
-                  product.price
-                )}</h1>
-                <h2 class="text-md text-gray-500 line-through">₹${this.formatPrice(
-                  product.originalPrice
-                )}</h2>
+              <div class="flex flex-col flex-grow">
+                <h1 class="font-semibold text-lg mb-2 text-start">${
+                  product.name
+                }</h1>
+                <div class="flex items-end gap-4 mb-2 mt-auto">
+                  <h1 class="font-bold text-2xl text-orange-500">₹${this.formatPrice(
+                    product.price
+                  )}</h1>
+                  <h2 class="text-md text-gray-500 line-through">₹${this.formatPrice(
+                    product.originalPrice
+                  )}</h2>
                 </div>
                 <h3 class="text-sm text-gray-500">${product.description}</h3>
-              
+              </div>
             </div>
           `;
         }
