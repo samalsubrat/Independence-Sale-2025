@@ -11,6 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-img': "url('holi-main.png')",
+                        'body-img': "url('holi-main-mobile.png')",
+                        'product-desktop': "url('productdesktop.jpg')",
+                        'product-mobile': "url('productmobile.jpg')",
+                    }
+                }
+            }
+        }
+    </script>
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -410,32 +424,152 @@
       ></div>
     </section>
 
+    <section class="px-2.5 md:px-20 lg:px-40 pb-16">
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >Arion</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="arionGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+
+    </section>
+
+    <!-- arion blockbuster  -->
+      <div>
+
+          <div
+            class="bg-center bg-cover bg-no-repeat bg-product-desktop h-screen hidden lg:block mx-auto">
+            <div class="flex flex-col justify-center items-center h-screen">
+                <h1 class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center">Blockbuster Deal</h1>
+                <div class="lg:flex lg:justify-center lg:items-center w-1/2 mx-auto space-y-6 lg:gap-20 py-10">
+                    <a href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/">
+                        <img src="arionfrost.png" alt="arionfrost"
+                            class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+       
+       
+        <div
+            class="bg-center bg-cover bg-no-repeat bg-product-mobile  items-center justify-center h-screen block lg:hidden">
+            <div class="flex flex-col justify-center items-center h-screen">
+                <h1 class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center">Blockbuster Deal</h1>
+                <div class="w-3/4 lg:w-2/5 mx-auto space-y-6 lg:gap-20 py-10">
+                    <a href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/">
+                        <img src="arionfrost.png" alt="ModelO"
+                            class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
 
 
-    <section class="px-2.5 md:px-20 lg:px-40 2xl:px-72 pb-16">
-      <h1 class="font-bold text-4xl pt-20 pb-8 text-center bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Aula Corner</h1>
-      <div
-        id="aulaGrid"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-      ></div>
-      <h1
-        class="font-bold text-4xl pt-20 pb-8 text-center bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent"
-      >
-        Royal Kludge Corner
-      </h1>
-      <div
-        id="rkGrid"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-      ></div>
-      <h1 class="font-bold text-4xl pt-20 pb-8 text-center bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent">Ducky Corner</h1>
-      <div
-        id="duckyGrid"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-      ></div>
+      </div>
+
+      <section class="px-2.5 md:px-20 lg:px-40 pb-16">
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >Aula</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="aulaGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >Royal Kludge</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="rkGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+      <div>
+        <h1
+          class="font-bold text-4xl pt-20 pb-8 text-center bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent"
+        >
+          Ducky Corner
+        </h1>
+        <div
+          id="duckyGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
     </section>
 
     <script>
+      const arionData = [
+        {
+          name: "Aula Frost X Keychron K8 Pro",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
+          price: 7999,
+          originalPrice: 15000,
+          description: "Get Arion Cordura Mousepad Free",
+        },
+        {
+          name: "Arion Carrying Case",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Arion-case-5-min-jpg.webp",
+          price: 1800,
+          originalPrice: 2500,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Arion Deskmat",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/pose3_V2.png",
+          price: 899,
+          originalPrice: 2500,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Arion Coiled Cable",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/Rainbow-Meckeys-Coiled-Cable-min-scaled-jpg.webp",
+          price: 1120,
+          originalPrice: 2500,
+          description: "Never Before Offer",
+        },
+      ];
       const aulaData = [
+        {
+          name: "Aula M75 Aluminum",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          price: 8999,
+          originalPrice: 9999,
+          description: "Get Ducky Feather Mouse Free",
+        },
         {
           name: "Aula F75 MAX",
           image:
@@ -445,12 +579,20 @@
           description: "Get Metal Switch Tester Free",
         },
         {
-          name: "Aula M75 Aluminum",
+          name: "Aula F87 Pro Wireless",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
-          price: 8999,
-          originalPrice: 9999,
-          description: "Get Ducky Feather Mouse Free",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
+          price: 5000,
+          originalPrice: 6400,
+          description: "Get Anime Cartoon Cat Keycaps Free",
+        },
+        {
+          name: "Aula Gradient PBT Double shot Keycaps",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+          price: 5500,
+          originalPrice: 6300,
+          description: "Limited Time Deal",
         },
         {
           name: "Aula F75 Wireless",
@@ -468,11 +610,27 @@
           originalPrice: 7500,
           description: "Get Metal Switch Tester Free",
         },
+        {
+          name: "Aula Thermally Sublimated PBT Keycaps",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          price: 5500,
+          originalPrice: 6400,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Epomaker X Aula F75",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+          price: 5500,
+          originalPrice: 6400,
+          description: "Get O-Ring Translucent Free",
+        },
       ];
 
       const rkData = [
         {
-          name: "Royal Kludge RK R98 Wireless",
+          name: "Royal Kludge S98 Wireless",
           image:
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-r98.jpg",
           price: 8099,
@@ -480,7 +638,7 @@
           description: "O-Ring Translucent Free",
         },
         {
-          name: "Royal Kludge RK R87 PRO",
+          name: "Royal Kludge R87 PRO",
           image:
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
           price: 4700,
@@ -488,7 +646,15 @@
           description: "O-Ring Translucent Free",
         },
         {
-          name: "Royal Kludge RK M87",
+          name: "Royal Kludge Blue Mix Keycaps",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m75-taro.jpg",
+          price: 6500,
+          originalPrice: 11000,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Royal Kludge M87",
           image:
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
           price: 7899,
@@ -496,7 +662,32 @@
           description: "O-Ring Translucent Free",
         },
         {
-          name: "Royal Kludge RK M75 TARO MILK",
+          name: "Royal Kludge H81",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+          price: 6419,
+          originalPrice: 10000,
+          description: "O-Ring Translucent Free",
+        },
+        {
+          name: "Royal Kludge R65",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+          price: 3999,
+          originalPrice: 6500,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Royal Kludge M3 Series",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+          price: 3999,
+          originalPrice: 6500,
+          description: "Limited Time Deal",
+        },
+
+        {
+          name: "Royal Kludge M75 TARO MILK",
           image:
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m75-taro.jpg",
           price: 6500,
@@ -540,6 +731,7 @@
         },
       ];
 
+      const arionGrid = document.getElementById("arionGrid");
       const aulaGrid = document.getElementById("aulaGrid");
       const rkGrid = document.getElementById("rkGrid");
       const duckyGrid = document.getElementById("duckyGrid");
@@ -550,9 +742,9 @@
 
       function createCard(product) {
         const card = document.createElement("a");
-        card.href = "#"; // Update with actual product link if available
+        card.href = "#";
         card.className =
-          "flex flex-col p-4 rounded-lg shadow-md hover:scale-105 hover:shadow-orange-200 duration-300 transform-transition-all bg-white/50 backdrop-blur-xl";
+          "flex flex-col p-4 rounded-lg shadow-md hover:scale-[101%] hover:shadow-green-500/50 duration-300 transform-transition-all bg-white/50 backdrop-blur-xl";
 
         card.innerHTML = `
     <img
@@ -561,23 +753,24 @@
       class="object-cover rounded-md h-64 md:h-52 xl:h-64 w-full shadow-sm"
     />
     <div class="flex flex-col flex-grow mt-2">
-      <h1 class="font-semibold text-lg md:text-xl text-start">${
+      <h1 class="font-semibold text-lg md:text-lg text-start">${
         product.name
       }</h1>
       <div class="flex items-end gap-4 mt-auto">
-        <h1 class="font-bold text-xl text-orange-500">₹${formatPrice(
+        <h1 class="font-bold text-xl text-black mt-2">₹${formatPrice(
           product.price
         )}</h1>
         <h2 class="text-md text-gray-500 line-through">₹${formatPrice(
           product.originalPrice
         )}</h2>
       </div>
-      <h3 class="text-sm text-gray-500">${product.description}</h3>
+      <h3 class="text-sm text-[#EA6C18] mt-2">${product.description}</h3>
     </div>
   `;
         return card;
       }
 
+      arionData.forEach((item) => arionGrid.appendChild(createCard(item)));
       aulaData.forEach((item) => aulaGrid.appendChild(createCard(item)));
       rkData.forEach((item) => rkGrid.appendChild(createCard(item)));
       duckyData.forEach((item) => duckyGrid.appendChild(createCard(item)));
