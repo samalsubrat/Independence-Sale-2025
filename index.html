@@ -12,18 +12,18 @@
       rel="stylesheet"
     />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    backgroundImage: {
-                        'hero-img': "url('holi-main.png')",
-                        'body-img': "url('holi-main-mobile.png')",
-                        'product-desktop': "url('productdesktop.jpg')",
-                        'product-mobile': "url('productmobile.jpg')",
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-img": "url('holi-main.png')",
+              "body-img": "url('holi-main-mobile.png')",
+              "product-desktop": "url('productdesktop.jpg')",
+              "product-mobile": "url('productmobile.jpg')",
+            },
+          },
+        },
+      };
     </script>
     <style>
       body {
@@ -441,46 +441,84 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
         ></div>
       </div>
-
     </section>
 
     <!-- arion blockbuster  -->
-      <div>
-
-          <div
-            class="bg-center bg-cover bg-no-repeat bg-product-desktop h-screen hidden lg:block mx-auto">
-            <div class="flex flex-col justify-center items-center h-screen">
-                <h1 class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center">Blockbuster Deal</h1>
-                <div class="lg:flex lg:justify-center lg:items-center w-1/2 mx-auto space-y-6 lg:gap-20 py-10">
-                    <a href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/">
-                        <img src="arionfrost.png" alt="arionfrost"
-                            class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
-                    </a>
-                </div>
-                
-            </div>
+    <div>
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-product-desktop h-screen hidden lg:block mx-auto"
+      >
+        <div class="flex flex-col justify-center items-center h-screen">
+          <h1
+            class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Blockbuster Deal
+          </h1>
+          <div class="flex flex-row w-1/2 py-12">
+            <a
+              href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/"
+              class="flex flex-row gap-12 w-3/4"
+            >
+              <img
+                src="frost.png"
+                alt="arionfrost"
+                class="w-full object-cover transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+              <img
+                src="gat3pin.png"
+                alt="ModelO"
+                class="w-1/5 object-cover transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="backdrop-blur-sm text-center rounded-lg">
+            <h3>Arion Frost Barebone with the most exciting offer</h3>
+            <h1 class="text-2xl font-bold pt-2 text-center">
+              Get Gateron 3 Pin Yellow Switches and Aula Gradient Keycaps FREE
+            </h1>
+          </div>
         </div>
-
-       
-       
-        <div
-            class="bg-center bg-cover bg-no-repeat bg-product-mobile  items-center justify-center h-screen block lg:hidden">
-            <div class="flex flex-col justify-center items-center h-screen">
-                <h1 class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center">Blockbuster Deal</h1>
-                <div class="w-3/4 lg:w-2/5 mx-auto space-y-6 lg:gap-20 py-10">
-                    <a href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/">
-                        <img src="arionfrost.png" alt="ModelO"
-                            class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-
-
       </div>
 
-      <section class="px-2.5 md:px-20 lg:px-40 pb-16">
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-product-mobile items-center justify-center h-screen block lg:hidden"
+      >
+        <div class="flex flex-col justify-center items-center h-screen">
+          <h1
+            class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Blockbuster Deal
+          </h1>
+          <div
+            class="w-3/4 lg:w-2/5 mx-auto space-y-6 lg:gap-20 py-10 items-center justify-center"
+          >
+            <a
+              href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/"
+              class="flex flex-col items-center justify-center"
+            >
+              <img
+                src="frost.png"
+                alt="ModelO"
+                class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+              <img
+                src="gat3pin.png"
+                alt="ModelO"
+                class="w-1/2 transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="backdrop-blur-sm text-center rounded-lg">
+            <h3>Arion Frost Barebone with the most exciting offer</h3>
+            <h1 class="text-xl font-bold pt-2 text-center">
+              Get Gateron 3 Pin Yellow Switches and Aula Gradient Keycaps FREE
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="px-2.5 md:px-20 lg:px-40 pb-16">
       <div>
         <div class="text-center mt-24 mb-12">
           <h2 class="text-4xl font-semibold mb-2 text-gray-900">
@@ -497,6 +535,118 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
         ></div>
       </div>
+
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >Keychron</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="keychronGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+    </section>
+
+    <!-- keychron section  -->
+    <div>
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-product-desktop h-screen hidden lg:block mx-auto"
+      >
+        <div class="flex flex-col justify-center items-center h-screen">
+          <h1
+            class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Keychron Special Offers
+          </h1>
+          <div class="flex flex-row w-1/2 py-12">
+            <a
+              href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/"
+              class="flex flex-row gap-12 w-3/4"
+            >
+              <img
+                src="keychrondustcover.png"
+                alt="keychrondustcover"
+                class="w-full object-cover transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+              <img
+                src="keychronCover.png"
+                alt="keychronCover"
+                class="w-full object-cover transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="backdrop-blur-sm text-center rounded-lg">
+            <h3>Don't forget to add this to your cart</h3>
+            <h1 class="text-2xl font-bold pt-2 text-center">
+              Get 20% Off - Limited Time Deal on Keychron Accessories
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-product-mobile items-center justify-center h-screen block lg:hidden"
+      >
+        <div class="flex flex-col justify-center items-center h-screen">
+          <h1
+            class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Blockbuster Deal
+          </h1>
+          <div
+            class="w-3/4 lg:w-2/5 mx-auto space-y-6 lg:gap-20 py-10 items-center justify-center"
+          >
+            <a
+              href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/"
+              class="flex flex-col items-center justify-center"
+            >
+              <img
+                src="keychrondustcover.png"
+                alt="keychrondustcover"
+                class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+              <img
+                src="keychronCover.png"
+                alt="keychronCover"
+                class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="backdrop-blur-sm text-center rounded-lg">
+            <h3>Don't forget to add this to your cart</h3>
+            <h1 class="text-xl font-bold pt-2 text-center">
+              Get 20% Off - Limited Time Deal on Keychron Accessories
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="px-2.5 md:px-20 lg:px-40 pb-16">
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >Ducky</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="duckyGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+
       <div>
         <div class="text-center mt-24 mb-12">
           <h2 class="text-4xl font-semibold mb-2 text-gray-900">
@@ -513,18 +663,82 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
         ></div>
       </div>
-      <div>
-        <h1
-          class="font-bold text-4xl pt-20 pb-8 text-center bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent"
-        >
-          Ducky Corner
-        </h1>
-        <div
-          id="duckyGrid"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-        ></div>
-      </div>
     </section>
+
+    <!-- royal kludge section  -->
+    <div>
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-product-desktop h-screen hidden lg:block mx-auto"
+      >
+        <div class="flex flex-col justify-center items-center h-screen">
+          <h1
+            class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Pre Order
+          </h1>
+          <div class="flex flex-row w-1/2 py-12">
+            <a
+              href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/"
+              class="flex flex-row gap-12 w-3/4"
+            >
+              <img
+                src="keychrondustcover.png"
+                alt="keychrondustcover"
+                class="w-full object-cover transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+              <img
+                src="keychronCover.png"
+                alt="keychronCover"
+                class="w-full object-cover transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="backdrop-blur-sm text-center rounded-lg">
+            <h3>Don't forget to add this to your cart</h3>
+            <h1 class="text-2xl font-bold pt-2 text-center">
+              Get 20% Off - Limited Time Deal on Keychron Accessories
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-product-mobile items-center justify-center h-screen block lg:hidden"
+      >
+        <div class="flex flex-col justify-center items-center h-screen">
+          <h1
+            class="text-4xl text-green-main md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Blockbuster Deal
+          </h1>
+          <div
+            class="w-3/4 lg:w-2/5 mx-auto space-y-6 lg:gap-20 py-10 items-center justify-center"
+          >
+            <a
+              href="https://www.meckeys.com/shop/keyboard/80-keyboard/arion-frost/"
+              class="flex flex-col items-center justify-center"
+            >
+              <img
+                src="keychrondustcover.png"
+                alt="keychrondustcover"
+                class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+              <img
+                src="keychronCover.png"
+                alt="keychronCover"
+                class="w-full transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="backdrop-blur-sm text-center rounded-lg">
+            <h3>Don't forget to add this to your cart</h3>
+            <h1 class="text-xl font-bold pt-2 text-center">
+              Get 20% Off - Limited Time Deal on Keychron Accessories
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       const arionData = [
@@ -565,7 +779,7 @@
         {
           name: "Aula M75 Aluminum",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-scaled.webp",
           price: 8999,
           originalPrice: 9999,
           description: "Get Ducky Feather Mouse Free",
@@ -573,7 +787,7 @@
         {
           name: "Aula F75 MAX",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/Aula-F75-MAX-Black-Side-Printed-00_-jpg.webp",
           price: 7500,
           originalPrice: 12500,
           description: "Get Metal Switch Tester Free",
@@ -581,15 +795,15 @@
         {
           name: "Aula F87 Pro Wireless",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/2.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/Aula-f87-pro-white-green-7.jpg",
           price: 5000,
           originalPrice: 6400,
-          description: "Get Anime Cartoon Cat Keycaps Free",
+          description: "Anime Cat Keycaps Free",
         },
         {
           name: "Aula Gradient PBT Double shot Keycaps",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/Bean-Powder-Side-Printed-keycap-02-jpeg.webp",
           price: 5500,
           originalPrice: 6300,
           description: "Limited Time Deal",
@@ -597,7 +811,7 @@
         {
           name: "Aula F75 Wireless",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/Aula-f75-black-9.jpg",
           price: 5500,
           originalPrice: 6300,
           description: "Get Metal Switch Tester Free",
@@ -605,7 +819,7 @@
         {
           name: "Aula F99 Wireless",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/Aula-f99-blue-purple-white-1.jpg",
           price: 6500,
           originalPrice: 7500,
           description: "Get Metal Switch Tester Free",
@@ -613,7 +827,7 @@
         {
           name: "Aula Thermally Sublimated PBT Keycaps",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/A-Dream-of-the-Star-River-jpg.webp",
           price: 5500,
           originalPrice: 6400,
           description: "Limited Time Deal",
@@ -621,10 +835,45 @@
         {
           name: "Epomaker X Aula F75",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ganss.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/Aula-f75-light-blue-7.jpg",
           price: 5500,
           originalPrice: 6400,
           description: "Get O-Ring Translucent Free",
+        },
+      ];
+
+      const keychronData = [
+        {
+          name: "Keychron V5 Max Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/V5-1-1.webp",
+          price: 9500,
+          originalPrice: 16000,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Keychron V1 MAX",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/KEYCHRON-V1-MAX-D-1.webp",
+          price: 8999,
+          originalPrice: 15000,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "Keychron Q1 V2",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/2021818-9359-1-jpeg.webp",
+          price: 13999,
+          originalPrice: 25000,
+          description: "Get Keychron Deskmat, Dust Cover Free",
+        },
+        {
+          name: "Keychron Deskmat",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/Keychron-Rapper-desk-mat_29c8f252-7a28-4d92-9f8f-8352bff100ad.webp-4.webp",
+          price: 5500,
+          originalPrice: 6300,
+          description: "Limited Time Deal",
         },
       ];
 
@@ -632,7 +881,7 @@
         {
           name: "Royal Kludge S98 Wireless",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-r98.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/RKS98-Camping-7.jpg",
           price: 8099,
           originalPrice: 12500,
           description: "O-Ring Translucent Free",
@@ -640,7 +889,7 @@
         {
           name: "Royal Kludge R87 PRO",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/61X9YRWz54L._AC_SL1500_-1.jpg",
           price: 4700,
           originalPrice: 7000,
           description: "O-Ring Translucent Free",
@@ -648,7 +897,7 @@
         {
           name: "Royal Kludge Blue Mix Keycaps",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m75-taro.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/Royal-Kludge-PBT-BLUE-YELLOW-SIDE-PRINTED-KEYCAPS-4-jpeg.webp",
           price: 6500,
           originalPrice: 11000,
           description: "Limited Time Deal",
@@ -656,7 +905,7 @@
         {
           name: "Royal Kludge M87",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/RK-M87-RD-9-jpg.webp",
           price: 7899,
           originalPrice: 12000,
           description: "O-Ring Translucent Free",
@@ -664,7 +913,7 @@
         {
           name: "Royal Kludge H81",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/RKH81-11-jpg.webp",
           price: 6419,
           originalPrice: 10000,
           description: "O-Ring Translucent Free",
@@ -672,7 +921,7 @@
         {
           name: "Royal Kludge R65",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/RKR65-Phantom-1-jpg.webp",
           price: 3999,
           originalPrice: 6500,
           description: "Limited Time Deal",
@@ -680,7 +929,7 @@
         {
           name: "Royal Kludge M3 Series",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m87.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/ROYAL-KLUDGE-M30-Wireless-Black-Orange-06-jpg.webp",
           price: 3999,
           originalPrice: 6500,
           description: "Limited Time Deal",
@@ -689,7 +938,7 @@
         {
           name: "Royal Kludge M75 TARO MILK",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/rk-m75-taro.jpg",
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/m75-taro-milk-4.jpg",
           price: 6500,
           originalPrice: 11000,
           description: "Mecmat - Orange leaves Free",
@@ -703,7 +952,7 @@
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-white.jpg",
           price: 9089,
           originalPrice: 12999,
-          description: "MRP 50% - Premium TKL mechanical keyboard",
+          description: "50% Off on all Ducky Products",
         },
         {
           name: "Ducky One 3 TKL Daybreak",
@@ -711,7 +960,7 @@
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-daybreak.jpg",
           price: 9739,
           originalPrice: 13999,
-          description: "MRP 50% - Daybreak colorway TKL keyboard",
+          description: "50% Off on all Ducky Products",
         },
         {
           name: "Ducky One 2 RGB TKL",
@@ -719,7 +968,7 @@
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-rgb.jpg",
           price: 9089,
           originalPrice: 12999,
-          description: "MRP 50% - RGB mechanical keyboard",
+          description: "50% Off on all Ducky Products",
         },
         {
           name: "Ducky One 3 SF CLASSIC BLACK RGB",
@@ -727,12 +976,13 @@
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
           price: 8189,
           originalPrice: 8539,
-          description: "MRP 50% - Compact 65% layout keyboard",
+          description: "50% Off on all Ducky Products",
         },
       ];
 
       const arionGrid = document.getElementById("arionGrid");
       const aulaGrid = document.getElementById("aulaGrid");
+      const keychronGrid = document.getElementById("keychronGrid");
       const rkGrid = document.getElementById("rkGrid");
       const duckyGrid = document.getElementById("duckyGrid");
 
@@ -772,6 +1022,9 @@
 
       arionData.forEach((item) => arionGrid.appendChild(createCard(item)));
       aulaData.forEach((item) => aulaGrid.appendChild(createCard(item)));
+      keychronData.forEach((item) =>
+        keychronGrid.appendChild(createCard(item))
+      );
       rkData.forEach((item) => rkGrid.appendChild(createCard(item)));
       duckyData.forEach((item) => duckyGrid.appendChild(createCard(item)));
     </script>
