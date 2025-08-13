@@ -16,7 +16,7 @@
         theme: {
           extend: {
             backgroundImage: {
-              "hero-img": "url('holi-main.png')",
+              "banner": "url('banner.jpg')",
               "body-img": "url('holi-main-mobile.png')",
               "product-desktop": "url('productdesktop.jpg')",
               "product-mobile": "url('productmobile.jpg')",
@@ -349,12 +349,12 @@
 
     <!-- Hero Section -->
     <section
-      class="min-h-[90vh] hero-bg flex items-center justify-center px-6 relative overflow-hidden"
+      class="min-h-[95vh] bg-banner flex items-center justify-center px-6 relative overflow-hidden"
     >
       <!-- Background Pattern -->
       <div class="absolute inset-0 opacity-5">
         <div
-          class="absolute top-20 left-20 w-32 h-32 border border-orange-300 rounded-full animate-spin-slow"
+          class="absolute top-34 left-20 w-32 h-32 border border-orange-300 rounded-full animate-spin-slow"
         ></div>
         <div
           class="absolute bottom-40 right-20 w-24 h-24 border border-green-300 rounded-full animate-spin-slow"
@@ -362,7 +362,7 @@
         ></div>
       </div>
 
-      <div class="text-center max-w-4xl mx-auto relative z-10">
+      <div class="text-center max-w-4xl mx-auto relative z-10 pt-10">
         <h1
           class="text-5xl md:text-7xl font-light mb-6 opacity-0 animate-fade-in-up"
         >
@@ -740,6 +740,59 @@
       </div>
     </div>
 
+    <section class="px-2.5 md:px-20 lg:px-40 pb-16">
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >MCHOSE</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="mchoseGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >VGN</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="vgnGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-32"
+        ></div>
+      </div>
+
+      <div>
+        <div class="text-center mt-24 mb-12">
+          <h2 class="text-4xl font-semibold mb-2 text-gray-900">
+            <span
+              class="bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent"
+              >Glorious</span
+            >
+            Corner
+          </h2>
+          <p class="text-gray-600">Premium keyboards for every setup</p>
+        </div>
+        <div
+          id="gloriousGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        ></div>
+      </div>
+    </section>
+
     <script>
       const arionData = [
         {
@@ -759,18 +812,18 @@
           description: "Limited Time Deal",
         },
         {
-          name: "Arion Deskmat",
+          name: "Arion Deskmat L",
           image:
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/pose3_V2.png",
           price: 899,
-          originalPrice: 2500,
+          originalPrice: 1500,
           description: "Limited Time Deal",
         },
         {
-          name: "Arion Coiled Cable",
+          name: "Arion Deskmat XL",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/Rainbow-Meckeys-Coiled-Cable-min-scaled-jpg.webp",
-          price: 1120,
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/Cudara_Mouse_Pad1-min-jpg.webp",
+          price: 1440,
           originalPrice: 2500,
           description: "Never Before Offer",
         },
@@ -949,34 +1002,195 @@
         {
           name: "Ducky One 3 TKL Pure White RGB",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-white.jpg",
-          price: 9089,
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/20220427163813bj7rd7gZu7-jpg.webp",
+          price: 6499,
           originalPrice: 12999,
           description: "50% Off on all Ducky Products",
         },
         {
           name: "Ducky One 3 TKL Daybreak",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-daybreak.jpg",
-          price: 9739,
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/ducky_daybreak_tkl_4-jpg.webp",
+          price: 6999,
           originalPrice: 13999,
           description: "50% Off on all Ducky Products",
         },
         {
           name: "Ducky One 2 RGB TKL",
           image:
-            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-rgb.jpg",
-          price: 9089,
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2021/11/Ducky-white-pudding-10-scaled-jpg.webp",
+          price: 6499,
           originalPrice: 12999,
           description: "50% Off on all Ducky Products",
         },
         {
           name: "Ducky One 3 SF CLASSIC BLACK RGB",
           image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/Ducky-One-3-SF-CLASSIC-BLACK-RGB-1-jpg.webp",
+          price: 4269,
+          originalPrice: 8539,
+          description: "50% Off on all Ducky Products",
+        },
+      ];
+
+      const mchoseData = [
+        {
+          name: "MCHOSE GX87 WIRELESS",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/MCHOSE-GX87-SERIES.webp",
+          price: 10349,
+          originalPrice: 11499,
+          description: "10% off Limited Time Deal",
+        },
+        {
+          name: "MCHOSE Jet 75",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-daybreak.jpg",
+          price: 9739,
+          originalPrice: 13999,
+          description: "10% off Limited Time Deal",
+        },
+        {
+          name: "MCHOSE G75 Pro",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-rgb.jpg",
+          price: 9089,
+          originalPrice: 12999,
+          description: "10% off Limited Time Deal",
+        },
+        {
+          name: "MCHOSE A5 Series",
+          image:
+            "https://www.mchose.store/cdn/shop/files/1_d9d3f49c-3686-4529-b012-92b7938817ec.png?v=1750389403&width=600",
+          price: 4140,
+          originalPrice: 4600,
+          description: "10% off Limited Time Deal",
+        },
+        {
+          name: "MCHOSE M7 Series",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/MC-M7-ULTRA-ORANGE-600x600.webp",
+          price: 4950,
+          originalPrice: 5500,
+          description: "Limited Time Deal",
+        },
+        {
+          name: "MCHOSE Laptop Stands",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/ynwa7abg-1-png.webp",
+          price: 2399,
+          originalPrice: 2999,
+          description: "20% off Limited Time Deal",
+        },
+        {
+          name: "MCHOSE Laptop Coolers",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/MCHOSE-LAPTOP-COOLING-FANS-02-jpg.webp",
+          price: 1071,
+          originalPrice: 1190,
+          description: "10% off Limited Time Deal",
+        },
+        {
+          name: "MCHOSE V9 Series Wireless Gaming Headset",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/MC-V9-BLACK-RED-01.webp",
+          price: 4050,
+          originalPrice: 4500,
+          description: "10% off Limited Time Deal",
+        },
+      ];
+
+      const vgnData = [
+        {
+          name: "ATK VXE V75X",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/ATK-V75X-SERIES00.webp",
+          price: 7600,
+          originalPrice: 8100,
+          description: "Get O-Ring Translucent Free",
+        },
+        {
+          name: "VGN N75 PRO",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/3d68c8b265f08671ab50b0fe6c853f75-PRODUCT-IMAGE.webp",
+          price: 4999,
+          originalPrice: 8000,
+          description: "Get O-Ring Translucent Free",
+        },
+        {
+          name: "VXE MAD R SERIES",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/web01.webp-1.webp",
+          price: 4590,
+          originalPrice: 5100,
+          description: "10% off Limited Time Deal",
+        },
+      ];
+
+      const gloriousData = [
+        {
+          name: "Glorious Model O Pro Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-white.jpg",
+          price: 5499,
+          originalPrice: 10999,
+          description: "50% Off + Grip Tape Free",
+        },
+        {
+          name: "Glorious Model O 2 Wireless",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-daybreak.jpg",
+          price: 7500,
+          originalPrice: 15000,
+          description: "50% Off + Grip Tape Free",
+        },
+        {
+          name: "Glorious Panda switch",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-rgb.jpg",
+          price: 9089,
+          originalPrice: 12999,
+          description: "20% Off Limited Time Deal",
+        },
+        {
+          name: "Glorious LYNX switch",
+          image:
             "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
           price: 8189,
           originalPrice: 8539,
-          description: "50% Off on all Ducky Products",
+          description: "20% Off Limited Time Deal",
+        },
+        {
+          name: "Glorious Mouse Grip Tape",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 8189,
+          originalPrice: 8539,
+          description: "10% Off Limited Time Deal",
+        },
+        {
+          name: "Glorious Cleaning Kit",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 8189,
+          originalPrice: 8539,
+          description: "20% Off Limited Time Deal",
+        },
+        {
+          name: "Glorious GOAT Stabilizers",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 8189,
+          originalPrice: 8539,
+          description: "20% Off Limited Time Deal",
+        },
+        {
+          name: "Glorious G-Skates Mouse Feet",
+          image:
+            "https://mks.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ducky-classic.jpg",
+          price: 8189,
+          originalPrice: 8539,
+          description: "10% Off Limited Time Deal",
         },
       ];
 
@@ -985,6 +1199,9 @@
       const keychronGrid = document.getElementById("keychronGrid");
       const rkGrid = document.getElementById("rkGrid");
       const duckyGrid = document.getElementById("duckyGrid");
+      const mchoseGrid = document.getElementById("mchoseGrid");
+      const vgnGrid = document.getElementById("vgnGrid");
+      const gloriousGrid = document.getElementById("gloriousGrid");
 
       function formatPrice(price) {
         return price.toLocaleString();
@@ -1027,6 +1244,9 @@
       );
       rkData.forEach((item) => rkGrid.appendChild(createCard(item)));
       duckyData.forEach((item) => duckyGrid.appendChild(createCard(item)));
+      mchoseData.forEach((item) => mchoseGrid.appendChild(createCard(item)));
+      vgnData.forEach((item) => vgnGrid.appendChild(createCard(item)));
+      gloriousData.forEach((item) => gloriousGrid.appendChild(createCard(item)));
     </script>
   </body>
 </html>
